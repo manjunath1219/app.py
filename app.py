@@ -4,7 +4,6 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import plotly.express as px
 
 ### Step 1: Loading the Data
 data = pd.read_csv(r"C:\Users\manju\Downloads\Online Sales Data.csv")
