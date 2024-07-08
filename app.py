@@ -57,22 +57,31 @@ print(avg_revenue_per_category)
 
 st.title('Reading the Data')
 st.dataframe(data)
+
 st.title('Missing Values')
 st.dataframe(missing_values)
+
 st.title('Summary statistics')
 st.dataframe(summary_stats)
+
 st.title('Group by Category and calculate total sales')
 st.dataframe(category_sales)
+
 st.title('Calculate total revenue')
 st.text(total_revenue)
+
 st.title('Monthly sales trend')
 st.dataframe(monthly_sales)
+
 st.title('Correlation between Price and Quantity Sold')
 st.text( correlation)
+
 st.title('Average revenue per product category')
 st.dataframe(avg_revenue_per_category)
+
 st.title('Barplot of Sales by category')
 st.bar_chart(category_sales, x='Product Category', y='Units Sold')
+
 st.title('Lineplot of Monthly sales trend')
 st.line_chart(monthly_sales, x='Date', y='Units Sold' )
 
