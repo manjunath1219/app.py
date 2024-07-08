@@ -6,10 +6,9 @@ import numpy as np
 import streamlit as st
 
 ### Step 1: Loading the Data
-path = st.text_input('CSV file path')
-data = pd.read_csv(path)
-data
-data.head()
+st.file_uploader("Upload your input file", type=["csv"], key="uploaded_file")
+data = pd.read_table(st.session_state["uploaded_file"] , sep=",", header=0)
+st.dataframe(data)
 
 ### Step 2: Data Cleaning
 missing_values = data.isnull().sum()
