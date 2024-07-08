@@ -53,20 +53,6 @@ print(f"Correlation between Price and Units Sold: {correlation}")
 avg_revenue_per_category = data.groupby('Product Category')['Revenue'].mean()
 print(avg_revenue_per_category)
 
-
-### Step 5: Predictive Modeling 
-from statsmodels.tsa.holtwinters import ExponentialSmoothing
-
-# Fit the model
-model = ExponentialSmoothing(monthly_sales['Units Sold'],trend='add', seasonal_periods=12)
-fit = model.fit()
-
-# Forecast the next 12 months
-forecast = fit.forecast(12)
-print(forecast)
-hist = data['Revenue']
-
-
 ######  Deploying the model  ######
 
 st.title('Reading the Data')
