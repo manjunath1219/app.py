@@ -6,7 +6,8 @@ import numpy as np
 import streamlit as st
 
 ### Step 1: Loading the Data
-data = pd.read_csv(r"C:\Users\manju\Downloads\Online Sales Data.csv")
+path = st.text_input('CSV file path')
+data = pd.read_csv(path)
 data
 data.head()
 
