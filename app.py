@@ -75,5 +75,4 @@ st.title('Barplot of Sales by category')
 st.bar_chart(category_sales, x='Product Category', y='Units Sold')
 st.title('Lineplot of Monthly sales trend')
 st.line_chart(monthly_sales, x='Date', y='Units Sold' )
-st.title('Histplot of Revenue distribution')
 
