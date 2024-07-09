@@ -95,3 +95,10 @@ st.bar_chart(category_sales, x='Product Category', y='Units Sold')
 st.title('Lineplot of Monthly sales trend')
 st.line_chart(monthly_sales, x='Date', y='Units Sold' )
 
+# Display the Revenu Distribution
+st.title('Revenu Distribution')
+st.bar_chart(data['Revenue'], width=700, height=500)
+
+
+
+
